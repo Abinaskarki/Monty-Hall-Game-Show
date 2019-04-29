@@ -1,0 +1,97 @@
+@import "compass/css3";
+
+@import "compass/css3/transform";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+body{
+	text-align: center;
+	background: #FBEEE6  ;
+	color: black;
+}
+
+img {
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 2px;
+  max-width: 360px;
+  height: 360px;
+}
+
+.wrap {
+  width: 765px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 4em;
+  font-family: 'IM Fell Great Primer';
+  position: relative;
+  color: #800080;
+  &:before {
+    content: attr(data);
+    position: absolute;
+    left: -.03em;
+    top: .03em;
+    color: #ccc;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFUlEQVQIW2NkQAKMIPZ/IGAEAWQZAE5lBATogF4qAAAAAElFTkSuQmCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+  }
+}
+
+img:hover {
+  box-shadow: 0 0 2px 2px yellow;
+}
+
+
+.col{
+	float: left;
+	height: 360px;
+	width: 33.33%;
+}
+
+.col img{
+	background-color: green;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper{
+	width: 100%;
+	height: 50px;
+}
+.col1{
+	margin-right: 10px;
+	float: right;
+	width: 40%;
+}
+.col2{
+	margin-left: 10px;
+	float: left;
+	width: 40%;
+}
+h4{
+	color: #20bf6b;
+}
+.result h2{
+	color:#E74C3C ;
+}
+.button {
+color: #20bf6b !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #20bf6b !important;
+border-radius: 6px;
+display: inline-block;
+}
+
+.button:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
